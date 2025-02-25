@@ -1,0 +1,77 @@
+body {
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: hsl(0, 0%, 95%); /* Light gray background */
+}
+
+#calculator {
+    font-family: Arial, sans-serif; /* Set font */
+    background-color: hsl(0, 0%, 15%); /* Dark gray background */
+    border-radius: 15px; /* Rounded corners */
+    max-width: 500px; /* Maximum width */
+    overflow: hidden; /* Hide overflow */
+}
+
+#display {
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding around text */
+    font-size: 5rem; /* Large font size */
+    text-align: left; /* Align text to the left */
+    border: none; /* Remove border */
+    background-color: hsl(0, 0%, 20%); /* Darker gray background */
+    color: white; /* White text color */
+}
+
+#keys {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 10px; /* Space between grid items */
+    padding: 25px; /* Padding around grid */
+}
+
+button {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    border-radius: 50%; /* Circular buttons */
+    border: none; /* Remove border */
+    background-color: hsl(0, 0%, 30%); /* Medium gray background */
+    color: white; /* White text color */
+    font-size: 3rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%); /* Lighter gray on hover */
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%); /* Even lighter gray when active */
+}
+
+.operator-btn {
+    background-color: hsl(35, 100%, 55%); /* Orange background for operators */
+}
+
+.operator-btn:hover {
+    background-color: hsl(35, 100%, 65%); /* Lighter orange on hover */
+}
+
+.operator-btn:active {
+    background-color: hsl(35, 100%, 75%); /* Even lighter orange when active */
+}
+
+.equal-btn {
+    background-color: hsl(200, 100%, 55%); /* Blue background for equal button */
+}
+
+.equal-btn:hover {
+    background-color: hsl(200, 100%, 65%); /* Lighter blue on hover */
+}
+
+.equal-btn:active {
+    background-color: hsl(200, 100%, 75%); /* Even lighter blue when active */
+}
